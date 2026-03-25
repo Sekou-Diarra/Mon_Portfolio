@@ -1,168 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille Technologique</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body data-page="veille">
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #00ffe0;" data-bs-theme="light">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="images/myself.png" alt="Logo personnel" width="30" height="24" class="me-2">
-                    <span>
-                        Sékou Mahamadou Zan DIARRA<br>
-                        <small>Étudiant en BTS SIO, option SLAM</small>
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Afficher la navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <div class="section-label">Veille</div>
+        <h1>Veille Technologique</h1>
+        <p>Suivi des tendances, innovations et actualités du secteur informatique.</p>
+      </div>
 
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                        <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="projets.html" id="projetsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Projets</a>
-                            <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                                <li><a class="dropdown-item" href="projet_scolaire.html">Projets scolaires</a></li>
-                                <li><a class="dropdown-item" href="projets.html">Projets personnels</a></li>
-                                <li><a class="dropdown-item" href="projet_entreprise.html">Projets en entreprise</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
-                        <li class="nav-item"><a href="veille.html" class="nav-link active">Veille</a></li>
-                        <!--
-                        <li class="nav-item">
-                            <a href="competence.html" class="nav-link">Compétences</a>
-                        </li>
-                        -->
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Recherche">
-                        <button class="btn btn-outline-danger" type="submit">Rechercher</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="container my-5">
-
-        <section class="my-5 text-center">
-            <h2>Qu'est-ce que la veille technologique ?</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p>
-                        La veille technologique est un processus organisé, continu et proactif qui consiste à rechercher,
-                        collecter, analyser et exploiter des informations relatives aux avancées techniques,
-                        scientifiques et technologiques dans un domaine donné. Elle permet de détecter les innovations,
-                        anticiper les évolutions, identifier les opportunités ou les menaces et adapter ses compétences,
-                        outils ou pratiques professionnelles.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="h3">Outils que j’utilise pour ma veille :</h2>
-            <div class="row row-cols-2 g-4 justify-content-center">
-                <div class="col text-center">
-                    <a href="https://www.inoreader.com" target="_blank">
-                        <img src="https://www.svgrepo.com/show/517063/inoreader.svg" class="img-fluid"
-                            alt="Logo Inoreader" width="100">
-                    </a>
-                </div>
-                <div class="col text-center">
-                    <a href="https://www.netvibes.com" target="_blank">
-                        <img src="https://seeklogo.com/images/N/netvibes-logo-4412011A79-seeklogo.com.png"
-                            class="img-fluid" alt="Logo Netvibes">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <table class="table table-bordered">
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>Inoreader</strong> est un agrégateur de flux RSS qui centralise automatiquement les
-                            contenus de plusieurs sites web dans une seule interface. Il envoie des alertes ou
-                            notifications lors de nouvelles publications correspondant à vos abonnements ou mots-clés.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Netvibes</strong> est un tableau de bord personnalisé pour suivre les actualités,
-                            blogs, réseaux sociaux et autres sources via des flux RSS. Il peut aussi envoyer des alertes
-                            selon vos mots-clés ou sources. C’est un outil puissant pour la veille technologique ou
-                            concurrentielle.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="h3">Articles récents sur le développement</h2>
-
-            <div class="mb-3">
-                <p>Source : developpez.com</p>
-                <a href="https://programmation.developpez.com/actu/372504/Les-erreurs-commises-par-les-ingenieurs-logiciels-dans-les-grandes-bases-de-codes-etablies-par-Sean-Goedecke/" target="_blank">
-                    Les erreurs commises par les ingénieurs logiciels dans les grandes bases de code
-                </a>
-            </div>
-
-            <div>
-                <p>Source : developpez.com</p>
-                <a href="https://windows.developpez.com/actu/373143/Windows-11-OneDrive-et-l-enfer-du-cloud-Microsoft-a-bloque-le-compte-d-un-utilisateur-lui-coupant-l-acces-a-30-ans-de-souvenirs-numeriques-et-de-travaux-professionnels-sans-aucun-recours-legitime/" target="_blank">
-                    Windows 11, OneDrive et l’enfer du cloud : Microsoft bloque un utilisateur sans recours
-                </a>
-            </div>
-
-            <div>
-                <p>Source : ZDNet France</p>
-                <a href="https://www.zdnet.fr/actualites/cette-nouvelle-fonctionnalite-phare-de-macos-tahoe-pourrait-rendre-docker-obsolete-477844.htm" target="_blank">
-                    Nouvelle fonctionalité de MacOS!<br>Docker en danger ???
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="container-fluid" style="background-color: #00ffe0;">
-        <div class="container py-4">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-4 text-dark mb-3 mb-md-0">
-                    <span>© 2025 Sékou Mahamadou Zan DIARRA</span>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
-                    <a href="#" aria-label="Instagram" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <hr class="my-3">
-            <div class="d-flex flex-column flex-md-row justify-content-between text-dark">
-                <a href="politique.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
-                <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
-                <a href="cgu.html" class="text-dark text-decoration-none">CGU</a>
-            </div>
+      <!-- DEFINITION -->
+      <section style="margin-bottom:56px">
+        <div class="info-box">
+          <strong style="color:var(--text);display:block;margin-bottom:6px">Qu'est-ce que la veille technologique ?</strong>
+          La veille technologique est un processus organisé, continu et proactif qui consiste à rechercher, 
+          collecter, analyser et exploiter des informations relatives aux avancées techniques, scientifiques 
+          et technologiques dans un domaine donné. Elle permet de détecter les innovations, anticiper les 
+          évolutions et adapter ses compétences et pratiques professionnelles.
         </div>
-    </footer>
+      </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+      <!-- OUTILS -->
+      <section style="margin-bottom:56px">
+        <div class="section-label">Méthode</div>
+        <h2 style="margin-bottom:8px">Outils utilisés pour ma veille</h2>
+        <p style="margin-bottom:28px">Agrégateurs et tableaux de bord pour centraliser les informations.</p>
+
+        <div class="grid-2">
+          <div class="tool-card">
+            <div class="tool-icon">
+              <img src="https://www.svgrepo.com/show/517063/inoreader.svg" alt="Inoreader">
+            </div>
+            <div>
+              <h3 style="margin-bottom:6px">Inoreader</h3>
+              <p class="tool-desc">
+                Agrégateur de flux RSS qui centralise automatiquement les contenus de plusieurs sites web 
+                dans une seule interface. Envoie des alertes lors de nouvelles publications correspondant 
+                à vos abonnements ou mots-clés.
+              </p>
+              <a href="https://www.inoreader.com" target="_blank" style="font-size:.82rem">Visiter le site →</a>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-icon" style="width:48px;height:48px;background:var(--bg3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:.7rem;color:var(--text-muted)">NV</div>
+            <div>
+              <h3 style="margin-bottom:6px">Netvibes</h3>
+              <p class="tool-desc">
+                Tableau de bord personnalisé pour suivre les actualités, blogs, réseaux sociaux et autres 
+                sources via des flux RSS. Peut aussi envoyer des alertes selon vos mots-clés. 
+                Outil puissant pour la veille technologique ou concurrentielle.
+              </p>
+              <a href="https://www.netvibes.com" target="_blank" style="font-size:.82rem">Visiter le site →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTICLES -->
+      <section>
+        <div class="section-label">Actualités</div>
+        <h2 style="margin-bottom:8px">Articles récents sur le développement</h2>
+        <p style="margin-bottom:28px">Une sélection d'articles pertinents issus de ma veille.</p>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+
+          <div class="article-card">
+            <div class="article-source">developpez.com</div>
+            <div class="article-title">
+              <a href="https://programmation.developpez.com/actu/372504/Les-erreurs-commises-par-les-ingenieurs-logiciels-dans-les-grandes-bases-de-codes-etablies-par-Sean-Goedecke/" target="_blank">
+                Les erreurs commises par les ingénieurs logiciels dans les grandes bases de code
+              </a>
+            </div>
+            <p style="font-size:.83rem;margin:0">
+              Analyse des erreurs les plus fréquentes lors de l'évolution de grandes bases de code, 
+              avec des conseils pratiques pour les éviter.
+            </p>
+          </div>
+
+          <div class="article-card">
+            <div class="article-source">developpez.com</div>
+            <div class="article-title">
+              <a href="https://windows.developpez.com/actu/373143/Windows-11-OneDrive-et-l-enfer-du-cloud-Microsoft-a-bloque-le-compte-d-un-utilisateur-lui-coupant-l-acces-a-30-ans-de-souvenirs-numeriques-et-de-travaux-professionnels-sans-aucun-recours-legitime/" target="_blank">
+                Windows 11, OneDrive et l'enfer du cloud : Microsoft bloque un utilisateur sans recours
+              </a>
+            </div>
+            <p style="font-size:.83rem;margin:0">
+              Un cas concret qui soulève des questions sur la dépendance au cloud et les risques liés 
+              au stockage exclusif de données chez un fournisseur tiers.
+            </p>
+          </div>
+
+          <div class="article-card">
+            <div class="article-source">ZDNet France</div>
+            <div class="article-title">
+              <a href="https://www.zdnet.fr/actualites/cette-nouvelle-fonctionnalite-phare-de-macos-tahoe-pourrait-rendre-docker-obsolete-477844.htm" target="_blank">
+                Nouvelle fonctionnalité de macOS Tahoe — Docker en danger ?
+              </a>
+            </div>
+            <p style="font-size:.83rem;margin:0">
+              macOS Tahoe introduit une fonctionnalité native de conteneurisation qui pourrait concurrencer 
+              directement Docker sur les machines Apple.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
 </body>
-
 </html>

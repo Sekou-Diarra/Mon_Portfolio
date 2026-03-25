@@ -1,199 +1,80 @@
-<!DOCTYPE hmtl>
-<html>
-    <head>
-        <title>Documentation</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="documentation">
 
-    <style>
-        .tech-card {
-          border-radius: 10px;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          padding: 1rem;
-          margin-bottom: 1.5rem;
-          transition: transform 0.2s ease;
-          background-color: white;
-        }
-        .tech-card:hover {
-          transform: scale(1.03);
-        }
-        .tech-card img {
-          width: 100%;
-          height: auto;
-          object-fit: contain;
-          max-height: 120px;
-        }
-      </style>
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <div class="section-label">Ressources</div>
+        <h1>Documentation</h1>
+        <p>Documents et ressources liés à mes projets et à ma formation.</p>
+      </div>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #00ffe0;" data-bs-theme="light">
-              <div class="container-fluid">
-                <!-- Logo + Nom -->
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                  <img src="images/myself.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top me-2">
-                  <span>
-                    Sékou Mahamadou Zan DIARRA<br>
-                    <small>Étudiant en BTS SIO, option SLAM</small>
-                  </span>
-                </a>
-          
-                <!-- Bouton toggle pour mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-          
-                <!-- Contenu de la navbar -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="profil.html" class="nav-link">Profil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="projets.html" id="projetsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Projets
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                        <li><a class="dropdown-item" href="projet_scolaire.html">Projets scolaires</a></li>
-                        <li><a class="dropdown-item" href="projets.html">Projets personnels</a></li>
-                        <li><a class="dropdown-item" href="projet_entreprise.html">Projets en entreprise</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a href="documentation.html" class="nav-link active">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="veille.html" class="nav-link">Veille</a>
-                    </li>
-                    <!--
-                        <li class="nav-item">
-                            <a href="competence.html" class="nav-link">Compétences</a>
-                        </li>
-                        -->
-                    <li class="nav-item">
-                      <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                  </ul>
-          
-                  <!-- Formulaire de recherche -->
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Recherche">
-                    <button class="btn btn-outline-danger" type="submit">Rechercher</button>
-                  </form>
-                </div>
-              </div>
-            </nav>
-          </header>
-          <!--
-          <main class="container my-5">
-            <h1>Bienvenue sur mon portfolio</h1>
-            <p>Contenu principal ici...</p>
-          </main>
-        -->
+      <section style="margin-bottom:48px">
+        <div class="section-label" style="margin-bottom:16px">Documents disponibles</div>
 
-          <section class="py-5">
-            <div class="container">
-              <h2 class="text-center fw-bold">Documentation</h2>
-              <p class="text-center mb-5">Voici les documentations dont je me sert le plus souvent pour la programmation</p>
-          
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                     <!-- W3Schools -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://www.w3schools.com" target="_blank">
-                            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools" width="100">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- Chart.js -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://www.chartjs.org/" target="_blank">
-                            <img src="https://www.chartjs.org/img/chartjs-logo.svg" alt="Chart.js" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- DataTables -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://datatables.net/" target="_blank">
-                            <img src="https://datatables.net/media/images/logo.png" alt="DataTables" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- Debian -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://www.debian.org/" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg" alt="Debian" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- Stack Overflow -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://stackoverflow.com/" target="_blank">
-                            <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" alt="Stack Overflow" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- GitHub -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://github.com/" target="_blank">
-                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- PHP -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://www.php.net/" target="_blank">
-                            <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-                    <!-- Java -->
-                  <div class="col">
-                    <div class="tech-card text-center">
-                        <a href="https://www.oracle.com/java/" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="img-fluid" style="max-height: 100px;">
-                        </a>
-                    </div>
-                  </div>
-              </div>
+        <table class="table-clean">
+          <thead>
+            <tr>
+              <th>Document</th>
+              <th>Type</th>
+              <th>Projet associé</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CV — Sékou DIARRA</td>
+              <td><span class="tool-chip">PDF</span></td>
+              <td>—</td>
+              <td><a href="documents/CV Sekou DIARRA.pdf" target="_blank" class="card-link">Ouvrir →</a></td>
+            </tr>
+            <tr>
+              <td>Contexte projet — Club Karaté</td>
+              <td><span class="tool-chip">PDF</span></td>
+              <td>Club Karaté</td>
+              <td><a href="documents/contexte_projet_karate.pdf" target="_blank" class="card-link">Ouvrir →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <div class="section-label" style="margin-bottom:16px">Technologies utilisées</div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title" style="margin-bottom:8px"><i class="fab fa-php" style="color:var(--accent);margin-right:8px"></i>PHP</h3>
+              <p class="card-desc" style="font-size:.85rem">Langage de script côté serveur utilisé pour le développement web dynamique et la gestion de bases de données.</p>
             </div>
-          </section>
-          
-
-          <footer class="container-fluid" style="background-color: #00ffe0;">
-            <div class="container py-4">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-4 text-dark mb-3 mb-md-0">
-                        <span>© 2025 Sékou Mahamadou Zan DIARRA</span>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="#" aria-label="Instagram" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <hr class="my-3">
-                <div class="d-flex flex-column flex-md-row justify-content-between text-dark">
-                    <a href="politique.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
-                    <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
-                    <a href="cgu.html" class="text-dark text-decoration-none">CGU</a>
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title" style="margin-bottom:8px"><i class="fas fa-database" style="color:var(--accent);margin-right:8px"></i>MySQL</h3>
+              <p class="card-desc" style="font-size:.85rem">Système de gestion de bases de données relationnelles open-source, utilisé dans la majorité de mes projets web.</p>
             </div>
-        </footer>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title" style="margin-bottom:8px"><i class="fab fa-html5" style="color:var(--accent);margin-right:8px"></i>HTML / CSS</h3>
+              <p class="card-desc" style="font-size:.85rem">Langages de base du web pour la structure et le style des interfaces utilisateur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-        </body>
-    </html>
+  <script src="main.js"></script>
+</body>
+</html>

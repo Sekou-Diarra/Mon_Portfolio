@@ -1,163 +1,145 @@
-<!DOCTYPE hmtl>
-<html>
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>Accueil</title>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>Sékou Diarra — Portfolio BTS SIO SLAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body data-page="index">
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: #00ffe0;" data-bs-theme="light">
-      <div class="container-fluid">
-        <!-- Logo + Nom -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="myself.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top me-2">
-          <span>
-            Sékou Mahamadou Zan DIARRA<br>
-            <small>Étudiant en BTS SIO, option SLAM</small>
-          </span>
-        </a>
+  <!-- injected by main.js -->
 
-        <!-- Bouton toggle pour mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <main>
 
-        <!-- Contenu de la navbar -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a href="profil.html" class="nav-link">Profil</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="projetsDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Projets
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                <li><a class="dropdown-item" href="projet_scolaire.html">Projets scolaires</a></li>
-                <li><a class="dropdown-item" href="projets.html">Projets personnels</a></li>
-                <li><a class="dropdown-item" href="projet_entreprise.html">Projets en entreprise</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="documentation.html" class="nav-link">Documentation</a>
-            </li>
-            <li class="nav-item">
-              <a href="veille.html" class="nav-link">Veille</a>
-            </li>
-            <!--
-                        <li class="nav-item">
-                            <a href="competence.html" class="nav-link">Compétences</a>
-                        </li>
-                        -->
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-
-          <!-- Formulaire de recherche -->
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Recherche">
-            <button class="btn btn-outline-danger" type="submit">Rechercher</button>
-          </form>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-tag">Disponible — BTS SIO 2ème année</div>
+        <h1>Sékou Mahamadou<br>Zan <span>DIARRA</span></h1>
+        <p class="hero-desc">
+          Étudiant en BTS SIO option SLAM au lycée Suzanne Valadon à Limoges.
+          Passionné par le développement web, les applications logicielles et la gestion de bases de données.
+        </p>
+        <div class="btn-group">
+          <a href="profil.html" class="btn btn-primary">
+            <i class="fas fa-user"></i> Voir mon profil
+          </a>
+          <a href="documents/CV Sekou DIARRA.pdf" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i> Télécharger mon CV
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center fw-bold">Qu'est ce que le BTSSIO ?</h2>
-      <p class="text-center mb-5">Le BTS Services informatiques aux organisations – BTS SIO vous forme aux métiers
-        d’administrateur réseau ou de développeur, et comporte deux options :
-      </p>
-      <div class="d-flex justify-content-center">
-        <ul class="text-start">
-          <li>Option SISR : solutions d’infrastructure, systèmes et réseaux,</li>
-          <li>Option SLAM : solutions logicielles et applications métiers.</li>
-        </ul>
-      </div> 
-      <p class="text-center">Le BTS SIO est un diplôme bac+2 de niveau 5 au RNCP, qui délivre 120 crédits ECTS et permet
-        la poursuite d’études si vous le souhaitez.</p>
-      <div class="row row-cols-2 text-center">
-        <div class="col">
-          <h3>Option Slam <i class="fa-solid fa-database"></i><br>(solutions logicielles et applications métiers)</h3>
-          <p>vous participerez à l'administration des systèmes et du réseau, serez capable de modifier ou d'adapter les
-            solutions d'infrastructure ainsi que la qualité de service des équipements des réseaux. Vous allez ainsi
-            acquérir les compétences pour concevoir une solution d'infrastructure réseau, l'installer, la tester et la
-            déployer. Vous allez aussi apprendre à administrer et superviser ce réseau.
-          </p>
-        </div>
-        <div class="col">
-          <h3>Option SISR <i class="fa-solid fa-server"></i><br>(solutions d’infrastructure, systèmes et réseaux,)</h3>
-          <p>vous participerez à la conception, au développement, ainsi qu'au déploiement et à la maintenance des
-            composants logiciels d'une solution applicative. Vous allez acquérir ainsi des compétences en conception et
-            développement d'une solution applicative, en maintenance de celle-ci, mais aussi en bases de données et en
-            gestion des données numériques.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="card flex-row shadow-sm">
-              <img src="images/appareil_photo.jpeg" class="img-fluid rounded-start" style="width: 360px; height: auto;" alt="Projet CUB">
-              <div class="card-body">
-                <span class="badge bg-info text-dark mb-2">Projets Pédagogiques</span>
-                <h5 class="card-title">Projet club photo</a></h5>
-                <p class="card-text">
-                  Objectif : Création d’un interface graphique pour un groupe de photographe<br>
-                  Outils : Wampserver, VSCode, PHPMyAdmin<br>
-                  <a href="club_photo.html" class="text-primary">Lire la suite…</a>
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Fait par <strong>Sekou</strong></small>
-                </p>
-              </div>
+    <hr class="divider">
+
+    <!-- BTSSIO EXPLAINER -->
+    <section class="section">
+      <div class="container">
+        <div class="section-label">Formation</div>
+        <h2 class="section-title">Qu'est-ce que le BTS SIO ?</h2>
+        <p class="section-sub">
+          Le BTS Services Informatiques aux Organisations est un diplôme bac+2 qui forme aux métiers 
+          de l'informatique en entreprise, avec deux spécialisations.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-tag">Option SLAM</div>
+              <h3 class="card-title"><i class="fas fa-database" style="color:var(--accent);margin-right:8px"></i>Solutions Logicielles et Applications Métiers</h3>
+              <p class="card-desc">
+                Conception, développement, déploiement et maintenance de composants logiciels. 
+                Compétences en développement web, mobile, bases de données et gestion des données numériques.
+              </p>
+              <span style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent)">← Ma filière</span>
             </div>
-            <p>
-              Ceci est un de mes projets pour voir le reste cliquer sur le lien suivant<br>
-              <a href="projet_scolaire.html">Mes projets</a>
-            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-tag" style="color:var(--text-muted);background:rgba(255,255,255,0.04);border-color:var(--border)">Option SISR</div>
+              <h3 class="card-title"><i class="fas fa-server" style="color:var(--text-muted);margin-right:8px"></i>Solutions d'Infrastructure, Systèmes et Réseaux</h3>
+              <p class="card-desc">
+                Administration des systèmes et réseaux, conception d'infrastructures, 
+                supervision et sécurisation des équipements réseau.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Répéter pour chaque bloc -->
       </div>
-    </div>
-  </section>
+    </section>
 
+    <hr class="divider">
 
-  <footer class="container-fluid" style="background-color: #00ffe0;">
-    <div class="container py-4">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-4 text-dark mb-3 mb-md-0">
-          <span>© 2025 Sékou Mahamadou Zan DIARRA</span>
+    <!-- FEATURED PROJECT -->
+    <section class="section">
+      <div class="container">
+        <div class="section-label">Projets récents</div>
+        <h2 class="section-title">Mes réalisations</h2>
+        <p class="section-sub">Voici un aperçu de quelques projets que j'ai réalisés en formation.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <img src="images/appareil_photo.jpeg" alt="Club Photo" class="card-img">
+            <div class="card-body">
+              <div class="card-tag">Projet scolaire</div>
+              <h3 class="card-title">Club Photo</h3>
+              <p class="card-desc">Interface graphique pour un groupe de photographes avec gestion des membres.</p>
+              <div class="card-tools">
+                <span class="tool-chip">PHP</span>
+                <span class="tool-chip">MySQL</span>
+                <span class="tool-chip">VSCode</span>
+              </div>
+              <a href="club_photo.html" class="card-link">Voir le projet →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/karate.jpg" alt="Club Karaté" class="card-img">
+            <div class="card-body">
+              <div class="card-tag">Projet scolaire</div>
+              <h3 class="card-title">Club Karaté</h3>
+              <p class="card-desc">Application de gestion des entraîneurs, jurys et bilan des compétitions.</p>
+              <div class="card-tools">
+                <span class="tool-chip">C#</span>
+                <span class="tool-chip">Visual Studio</span>
+                <span class="tool-chip">PHPMyAdmin</span>
+              </div>
+              <a href="club_karate.html" class="card-link">Voir le projet →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/burger.jpg" alt="Resto" class="card-img">
+            <div class="card-body">
+              <div class="card-tag">Projet scolaire</div>
+              <h3 class="card-title">Site Restauration</h3>
+              <p class="card-desc">Site web complet pour un restaurant, avec menu dynamique et gestion des commandes.</p>
+              <div class="card-tools">
+                <span class="tool-chip">PHP</span>
+                <span class="tool-chip">MySQL</span>
+                <span class="tool-chip">Wampserver</span>
+              </div>
+              <a href="projet_resto.html" class="card-link">Voir le projet →</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
-          <a href="#" aria-label="Instagram" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
+
+        <div style="margin-top:32px">
+          <a href="projet_scolaire.html" class="btn btn-secondary">Voir tous les projets →</a>
         </div>
       </div>
-      <hr class="my-3">
-      <div class="d-flex flex-column flex-md-row justify-content-between text-dark">
-        <a href="politique.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
-        <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
-        <a href="cgu.html" class="text-dark text-decoration-none">CGU</a>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>

@@ -1,158 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <title>Projet_karate - Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Karaté — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body data-page="projets">
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #00ffe0;" data-bs-theme="light">
-            <div class="container-fluid">
-                <!-- Logo + Nom -->
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="images/myself.png" alt="logo" width="30" height="24"
-                        class="d-inline-block align-text-top me-2">
-                    <span>
-                        Sékou Mahamadou Zan DIARRA<br>
-                        <small>Étudiant en BTS SIO, option SLAM</small>
-                    </span>
-                </a>
+  <main>
+    <div class="container">
 
-                <!-- Bouton toggle pour mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <div class="page-header">
+        <div class="section-label">Projets scolaires</div>
+        <h1>Club Karaté</h1>
+        <p>Mission 3 — Gestion des entraîneurs, affectation des jurys et bilan des compétiteurs.</p>
+      </div>
 
-                <!-- Contenu de la navbar -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
-                        <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="projetsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Projets
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                                <li><a class="dropdown-item" href="projet_scolaire.html">Projets scolaires</a></li>
-                                <li><a class="dropdown-item" href="projets.html">Projets personnels</a></li>
-                                <li><a class="dropdown-item" href="projet_entreprise.html">Projets en entreprise</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
-                        <li class="nav-item"><a href="veille.html" class="nav-link">Veille</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
+      <!-- META TAGS -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <span class="tool-chip"><i class="fas fa-tag" style="margin-right:6px;color:var(--accent)"></i>Projet scolaire</span>
+        <span class="tool-chip"><i class="fas fa-laptop-code" style="margin-right:6px;color:var(--accent)"></i>Visual Studio Enterprise</span>
+        <span class="tool-chip"><i class="fas fa-server" style="margin-right:6px;color:var(--accent)"></i>WampServer</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>PHPMyAdmin</span>
+        <span class="tool-chip"><i class="fas fa-hashtag" style="margin-right:6px;color:var(--accent)"></i>C#</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>MySQL</span>
+      </div>
 
-                    <!-- Formulaire de recherche -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Recherche">
-                        <button class="btn btn-outline-danger" type="submit">Rechercher</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start">
 
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold">Objectif :</h2>
-            <p class="text-center mb-5">
-                Mission 3 – Réalisation des tâches suivantes : T1.3, T2.3, T2.6.
+        <!-- LEFT -->
+        <div>
+
+          <!-- CONTEXTE -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Contexte</div>
+            <h2 style="margin-bottom:16px">Club de Karaté</h2>
+            <p style="margin-bottom:20px">
+              Ce projet porte sur la réalisation de la Mission 3, comprenant trois tâches principales
+              liées à la gestion d'une compétition de karaté. Pour consulter le contexte complet du projet :
             </p>
-    
-            <div class="d-flex justify-content-center">
-                <ul class="text-start">
-                    <li><strong>T1.3 Gestion des entraîneurs :</strong> cette tâche doit permettre la création, la modification et la suppression d’un entraîneur à partir d’un formulaire. Il faudra réaliser la maquette de ce formulaire, la faire valider par le chef de projet avant de commencer le codage. Il faudra vérifier qu’un entraîneur ne peut être membre du club et qu’il n’entraîne qu’un seul club.</li>
-                    <li><strong>T2.3 Affectation des entraîneurs comme membres du jury :</strong> cette tâche doit permettre la création, la modification et la suppression de l’affectation d’entraîneurs à une compétition. Là aussi, il faudra proposer une maquette du formulaire au chef de projet. Prévoir tous les contrôles nécessaires au bon fonctionnement de cette tâche.</li>
-                    <li><strong>T2.6 Affichage d’un bilan global sur une saison pour un compétiteur donné :</strong> cette tâche doit permettre l’affichage d’un récapitulatif par saison pour un candidat donné. À la suite de la saisie d’un membre de la Ligue, le document doit faire apparaître dans un tableau la liste des compétitions auxquelles a participé le membre, en indiquant pour chacune la date, le lieu et la note globale obtenue.</li>
-                </ul>
-            </div>
-    
-            <p class="text-center mb-5">
-                <strong>Outils :</strong> Utilisation du serveur local Wampserver, de la base de données PHPMyAdmin, et de l'éditeur Visual Studio Entreprise.
-            </p>
-    
-            <div class="row">
-                <div class="col">
-                    <div class="text-center">
-                        <h5 class="fw-bold">Synthèse :</h5>
-                        <div class="d-flex justify-content-center">
-                            <ul class="text-start">
-                                <li>Création des différentes pages du site</li>
-                                <li>Implantation de la base de données</li>
-                                <li>Rédaction du code</li>
-                                <li>Test des différentes fonctionnalités</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row mt-4">
-                <div class="col">
-                    <div class="text-center">
-                        <h5 class="fw-bold">Contexte :</h5>
-                        <p>
-                            Le Club de karaté.<br>
-                            Pour prendre connaissance du contexte, veuillez consulter la documentation suivante :
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <iframe src="documents/contexte_projet_karate.pdf" width="80%" height="600px">Projet Karaté</iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row mt-4">
-                <div class="col">
-                    <div class="text-center">
-                        <h5 class="fw-bold">Étapes :</h5>
-                        <div class="d-flex justify-content-center">
-                            <ul class="text-start">
-                                <li>Partie 1 : Implantation de la base de données</li>
-                                <li>Partie 2 : Prise en main de l'environnement Visual Studio Entreprise</li>
-                                <li>Partie 3 : Rédaction du code pour créer les formulaires nécessaires à la réalisation des tâches de la mission</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+            <iframe src="documents/contexte_projet_karate.pdf" width="100%" height="480px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2)">
+              Contexte projet Karaté
+            </iframe>
+          </section>
 
-    <footer class="container-fluid" style="background-color: #00ffe0;">
-        <div class="container py-4">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-4 text-dark mb-3 mb-md-0">
-                    <span>© 2025 Sékou Mahamadou Zan DIARRA</span>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
-                    <a href="#" aria-label="Instagram" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <hr class="my-3">
-            <div class="d-flex flex-column flex-md-row justify-content-between text-dark">
-                <a href="politique.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
-                <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
-                <a href="cgu.html" class="text-dark text-decoration-none">CGU</a>
-            </div>
-        </div>
-    </footer>
+          <!-- TÂCHES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Objectifs</div>
+            <h2 style="margin-bottom:24px">Tâches à réaliser</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+            <div style="display:flex;flex-direction:column;gap:16px">
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">T1.3</span>
+                    <h3 style="font-size:.98rem;margin:0">Gestion des entraîneurs</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Création, modification et suppression d'un entraîneur via un formulaire. 
+                    Réalisation de la maquette validée par le chef de projet avant codage. 
+                    Vérification qu'un entraîneur ne peut pas être membre du club et n'entraîne qu'un seul club.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">T2.3</span>
+                    <h3 style="font-size:.98rem;margin:0">Affectation des entraîneurs comme membres du jury</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Création, modification et suppression de l'affectation d'entraîneurs à une compétition. 
+                    Maquette du formulaire soumise au chef de projet. 
+                    Mise en place de tous les contrôles nécessaires au bon fonctionnement.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">T2.6</span>
+                    <h3 style="font-size:.98rem;margin:0">Bilan global sur une saison pour un compétiteur</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Affichage d'un récapitulatif par saison pour un candidat donné. 
+                    Après saisie d'un membre de la Ligue, affichage dans un tableau de la liste des compétitions 
+                    auxquelles il a participé : date, lieu et note globale obtenue.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ÉTAPES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Déroulement</div>
+            <h2 style="margin-bottom:28px">Étapes du projet</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 1</div>
+                <div class="timeline-title">Implantation de la base de données</div>
+                <div class="timeline-place">Création et configuration de la base de données MySQL via PHPMyAdmin.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 2</div>
+                <div class="timeline-title">Prise en main de Visual Studio Enterprise</div>
+                <div class="timeline-place">Découverte de l'environnement de développement et configuration du projet C#.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 3</div>
+                <div class="timeline-title">Rédaction du code</div>
+                <div class="timeline-place">Création des formulaires nécessaires à la réalisation des tâches T1.3, T2.3 et T2.6.</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SYNTHESE -->
+          <section>
+            <div class="section-label">Bilan</div>
+            <h2 style="margin-bottom:20px">Synthèse des réalisations</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-database"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Base de données</h3>
+                  <p style="font-size:.83rem;margin:0">Implantation complète de la base de données du club.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-window-restore"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Formulaires</h3>
+                  <p style="font-size:.83rem;margin:0">Création des formulaires Windows pour chaque tâche de la mission.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-code"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Rédaction du code</h3>
+                  <p style="font-size:.83rem;margin:0">Développement C# avec connexion et requêtes vers la base MySQL.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-vial"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Tests</h3>
+                  <p style="font-size:.83rem;margin:0">Tests des différentes fonctionnalités et corrections des anomalies.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="card">
+            <img src="images/karate.jpg" alt="Club Karaté" style="width:100%;height:180px;object-fit:cover">
+            <div class="card-body">
+              <div class="card-tag">Projet pédagogique</div>
+              <h3 class="card-title">Club Karaté</h3>
+              <p class="card-desc" style="font-size:.85rem">Application C# de gestion d'une compétition de karaté avec base de données MySQL.</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Mission 3 — Tâches</strong>
+            <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:5px">
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.3</span> — Gestion des entraîneurs</li>
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">T2.3</span> — Affectation des jurys</li>
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">T2.6</span> — Bilan par saison</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Stack technique</strong>
+            <div class="card-tools" style="margin:0">
+              <span class="tool-chip">C#</span>
+              <span class="tool-chip">.NET</span>
+              <span class="tool-chip">MySQL</span>
+              <span class="tool-chip">Visual Studio</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+            </div>
+          </div>
+
+          <a href="projet_scolaire.html" class="btn btn-secondary" style="width:100%;justify-content:center">
+            ← Retour aux projets
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
 </body>
-
 </html>

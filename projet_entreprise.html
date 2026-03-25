@@ -1,121 +1,34 @@
-<!DOCTYPE hmtl>
-<html>
-    <head>
-        <title>projet entreprise</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #00ffe0;" data-bs-theme="light">
-              <div class="container-fluid">
-                <!-- Logo + Nom -->
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                  <img src="images/myself.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top me-2">
-                  <span>
-                    Sékou Mahamadou Zan DIARRA<br>
-                    <small>Étudiant en BTS SIO, option SLAM</small>
-                  </span>
-                </a>
-          
-                <!-- Bouton toggle pour mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-          
-                <!-- Contenu de la navbar -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link active">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="profil.html" class="nav-link">Profil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="projetsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Projets
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                        <li><a class="dropdown-item" href="projet_scolaire.html">Projets scolaires</a></li>
-                        <li><a class="dropdown-item" href="projets.html">Projets personnels</a></li>
-                        <li><a class="dropdown-item" href="projet_entreprise.html">Projets en entreprise</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a href="documentation.html" class="nav-link">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="veille.html" class="nav-link">Veille</a>
-                    </li>
-                    <!--
-                        <li class="nav-item">
-                            <a href="competence.html" class="nav-link">Compétences</a>
-                        </li>
-                        -->
-                    <li class="nav-item">
-                      <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                  </ul>
-          
-                  <!-- Formulaire de recherche -->
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Recherche">
-                    <button class="btn btn-outline-danger" type="submit">Rechercher</button>
-                  </form>
-                </div>
-              </div>
-            </nav>
-          </header>
-          
-          <main class="container my-5">
-            <h1>Bienvenue sur mon portfolio</h1>
-            <p>Contenu principal ici...</p>
-          </main>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets en entreprise — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
 
-          <section class="py-5">
-            <div class="container">
-              <h2 class="text-center fw-bold">Titre principal</h2>
-              <p class="text-center mb-5">Un sous-titre ou une introduction.</p>
-          
-              <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                  <div class="text-center p-4 border rounded shadow-sm">
-                    <i class="bx bx-code-alt bx-lg mb-3 text-primary"></i>
-                    <h5 class="fw-bold">Développement</h5>
-                    <p class="text-muted">Description courte de la compétence.</p>
-                  </div>
-                </div>
-                <!-- Répéter pour chaque bloc -->
-              </div>
-            </div>
-          </section>
-          
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <div class="section-label">Projets / Entreprise</div>
+        <h1>Projets en entreprise</h1>
+        <p>Initiatives réalisés lors de mes stages et périodes en entreprise.</p>
+      </div>
 
-          <footer class="container-fluid" style="background-color: #00ffe0;">
-            <div class="container py-4">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-4 text-dark mb-3 mb-md-0">
-                        <span>© 2025 Sékou Mahamadou Zan DIARRA</span>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="#" aria-label="Instagram" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <hr class="my-3">
-                <div class="d-flex flex-column flex-md-row justify-content-between text-dark">
-                    <a href="politique.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
-                    <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
-                    <a href="cgu.html" class="text-dark text-decoration-none">CGU</a>
-                </div>
-            </div>
-        </footer>
+      <div class="info-box">
+        <p style="margin:0;font-size:.9rem">
+          Cette section est en cours de construction. 
+          De nouveaux projets seront ajoutés prochainement.
+        </p>
+      </div>
+    </div>
+  </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-        </body>
-    </html>
+  <script src="main.js"></script>
+</body>
+</html>

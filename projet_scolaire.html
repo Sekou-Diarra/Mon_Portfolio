@@ -1,165 +1,185 @@
-<!DOCTYPE hmtl>
-<html>
-    <head>
-        <title>projet scolaire</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #00ffe0;" data-bs-theme="light">
-              <div class="container-fluid">
-                <!-- Logo + Nom -->
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                  <img src="images/myself.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top me-2">
-                  <span>
-                    Sékou Mahamadou Zan DIARRA<br>
-                    <small>Étudiant en BTS SIO, option SLAM</small>
-                  </span>
-                </a>
-          
-                <!-- Bouton toggle pour mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-          
-                <!-- Contenu de la navbar -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link active">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="profil.html" class="nav-link">Profil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="projetsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Projets
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                        <li><a class="dropdown-item" href="projet_scolaire.html">Projets scolaires</a></li>
-                        <li><a class="dropdown-item" href="projets.html">Projets personnels</a></li>
-                        <li><a class="dropdown-item" href="projet_entreprise.html">Projets en entreprise</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a href="documentation.html" class="nav-link">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="veille.html" class="nav-link">Veille</a>
-                    </li>
-                    <!--
-                        <li class="nav-item">
-                            <a href="competence.html" class="nav-link">Compétences</a>
-                        </li>
-                        -->
-                    <li class="nav-item">
-                      <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                  </ul>
-          
-                  <!-- Formulaire de recherche -->
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Recherche">
-                    <button class="btn btn-outline-danger" type="submit">Rechercher</button>
-                  </form>
-                </div>
-              </div>
-            </nav>
-          </header>
-          
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets scolaires — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
 
-          <section>
-            <div class="container my-5">
-                <div class="row g-4">
-                  
-                  <!-- Une card projet -->
-                  <div class="col-12">
-                    <div class="card flex-row shadow-sm">
-                      <img src="images/appareil_photo.jpeg" class="img-fluid rounded-start" style="width: 360px; height: auto;" alt="Projet CUB">
-                      <div class="card-body">
-                        <span class="badge bg-info text-dark mb-2">Projets Pédagogiques</span>
-                        <h5 class="card-title">Projet club photo</a></h5>
-                        <p class="card-text">
-                          Objectif : Création d’un interface graphique pour un groupe de photographe<br>
-                          Outils : Wampserver, VSCode, PHPMyAdmin<br>
-                          <a href="club_photo.html" class="text-primary">Lire la suite…</a>
-                        </p>
-                        <p class="card-text">
-                          <small class="text-muted">Fait par <strong>Sekou</strong></small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Copier cette structure pour chaque autre projet -->
-                  
-                  <div class="col-12">
-                    <div class="card flex-row shadow-sm">
-                      <img src="images/karate.jpg" class="img-fluid rounded-start" style="width: 360px; height: auto;" alt="Projet CUB">
-                      <div class="card-body">
-                        <span class="badge bg-info text-dark mb-2">Projets Pédagogiques</span>
-                        <h5 class="card-title">Club Karate</a></h5>
-                        <p class="card-text">
-                          Objectif : Création d’une application pour la gestion des entraineurs, des jury et l'affichage du bilan globale de la compétition<br>
-                          Outils : Visual studio entreprise, PHPMyAdmin <br>
-                          <a href="club_karate.html" class="text-primary">Lire la suite…</a>
-                        </p>
-                        <p class="card-text">
-                          <small class="text-muted">Fait par <strong>Sekou</strong></small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <div class="section-label">Projets / Scolaires</div>
+        <h1>Projets scolaires</h1>
+        <p>Réalisations effectuées dans le cadre de ma formation BTS SIO option SLAM.</p>
+      </div>
 
-                  <div class="col-12">
-                    <div class="card flex-row shadow-sm">
-                      <img src="images/burger.jpg" class="img-fluid rounded-start" style="width: 360px; height: auto;" alt="Projet CUB">
-                      <div class="card-body">
-                        <span class="badge bg-info text-dark mb-2">Projets Pédagogiques</span>
-                        <h5 class="card-title">Resto</a></h5>
-                        <p class="card-text">
-                          Objectif : Création d’un site web pour un resto<br>
-                          Outils : Wampserver, PHPMyAdmin, VSCode<br>
-                          <a href="projet_resto.html" class="text-primary">Lire la suite…</a>
-                        </p>
-                        <p class="card-text">
-                          <small class="text-muted">Fait par <strong>Sekou</strong></small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+      <div class="grid-3">
 
-                </div>
-              </div>
-              
-          </section>
-          
-
-          <footer class="container-fluid" style="background-color: #00ffe0;">
-            <div class="container py-4">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-4 text-dark mb-3 mb-md-0">
-                        <span>© 2025 Sékou Mahamadou Zan DIARRA</span>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="#" aria-label="Instagram" class="text-dark fs-4"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="text-dark fs-4"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <hr class="my-3">
-                <div class="d-flex flex-column flex-md-row justify-content-between text-dark">
-                    <a href="politique.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
-                    <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
-                    <a href="cgu.html" class="text-dark text-decoration-none">CGU</a>
-                </div>
+        <div class="card">
+          <img src="images/appareil_photo.jpeg" alt="Club Photo" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Club Photo</h3>
+            <p class="card-desc">
+              Création d'une interface graphique pour un groupe de photographes. 
+              Gestion des membres, galerie et administration.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">MySQL</span>
+              <span class="tool-chip">Wampserver</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">VSCode</span>
             </div>
-        </footer>
+            <a href="club_photo.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-        </body>
-    </html>
+        <div class="card">
+          <img src="images/karate.jpg" alt="Club Karaté" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Club Karaté</h3>
+            <p class="card-desc">
+              Application Windows de gestion des entraîneurs, jurys et affichage 
+              du bilan global d'une compétition de karaté.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">C#</span>
+              <span class="tool-chip">Visual Studio</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">MySQL</span>
+            </div>
+            <a href="club_karate.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/burger.jpg" alt="Restauration" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Site Restauration</h3>
+            <p class="card-desc">
+              Création d'un site web pour un restaurant incluant le menu, 
+              les réservations et une interface d'administration.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">MySQL</span>
+              <span class="tool-chip">Wampserver</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+            </div>
+            <a href="projet_resto.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+<!-- Projet Seminaires -->
+        <div class="card">
+          <img src="images/seminaire.jpeg" alt="Club Karaté" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Projet Séminaire</h3>
+            <p class="card-desc">
+              Application de gestion des conférences d'un séminaire, des inscriptions à 
+              un séminaire, des intervenants sur le séminaire et du lieu de déroulement 
+              du séminaire.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">Visual Studio Code</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">API REST</span>
+            </div>
+            <a href="club_karate.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+<!-- Projet Analim -->
+        <div class="card">
+          <img src="images/congres.jpeg" alt="Club Karaté" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Congrès ANALIM</h3>
+            <p class="card-desc">
+              Application Windows de gestion des entraîneurs, jurys et affichage 
+              du bilan global d'une compétition de karaté.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">C#</span>
+              <span class="tool-chip">Visual Studio</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">MySQL</span>
+            </div>
+            <a href="club_karate.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+<!-- Projet Jardinier -->
+        <div class="card">
+          <img src="images/social_media.jpeg" alt="Club Karaté" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Réseau Social Utribu</h3>
+            <p class="card-desc">
+              Application Windows de gestion des entraîneurs, jurys et affichage 
+              du bilan global d'une compétition de karaté.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">C#</span>
+              <span class="tool-chip">Visual Studio</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">MySQL</span>
+            </div>
+            <a href="club_karate.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+<!-- Projet GLPI -->
+        <div class="card">
+          <img src="images/karate.jpg" alt="Club Karaté" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">GLPI</h3>
+            <p class="card-desc">
+              Application Windows de gestion des entraîneurs, jurys et affichage 
+              du bilan global d'une compétition de karaté.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">C#</span>
+              <span class="tool-chip">Visual Studio</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">MySQL</span>
+            </div>
+            <a href="club_karate.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+<!-- Projet Replication -->
+        <div class="card">
+          <img src="images/base_donnee.jpeg" alt="Club Karaté" class="card-img">
+          <div class="card-body">
+            <div class="card-tag">Pédagogique</div>
+            <h3 class="card-title">Réplication  Base de Données</h3>
+            <p class="card-desc">
+              Application Windows de gestion des entraîneurs, jurys et affichage 
+              du bilan global d'une compétition de karaté.
+            </p>
+            <div class="card-tools">
+              <span class="tool-chip">C#</span>
+              <span class="tool-chip">Visual Studio</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+              <span class="tool-chip">MySQL</span>
+            </div>
+            <a href="club_karate.html" class="card-link">Détails du projet →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
