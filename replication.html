@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réplication base de données — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <div class="section-label">Projets scolaires</div>
+        <h1>Réplication base de données</h1>
+        <p>Documentation technique : réplication MariaDB (Master/Slave) sur Debian.</p>
+      </div>
+
+      <!-- META TAGS -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <span class="tool-chip"><i class="fas fa-tag" style="margin-right:6px;color:var(--accent)"></i>Projet scolaire</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>MariaDB</span>
+        <span class="tool-chip"><i class="fas fa-server" style="margin-right:6px;color:var(--accent2)"></i>Debian 12</span>
+        <span class="tool-chip"><i class="fas fa-code" style="margin-right:6px;color:var(--accent2)"></i>SQL</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start">
+
+        <!-- LEFT -->
+        <div>
+
+          <section style="margin-bottom:48px">
+            <div class="section-label">Documentation technique</div>
+            <h2 style="margin-bottom:16px">Réplication de base de données (Master/Slave)</h2>
+
+            <iframe
+              src="documents/Documentation%20R%C3%A9plication%20de%20base%20de%20donn%C3%A9es%20dur%20debian12.pdf"
+              width="100%"
+              height="520px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2)">
+              Documentation réplication
+            </iframe>
+          </section>
+
+          <section style="margin-top:24px">
+            <div class="section-label">Contexte</div>
+            <h2 style="margin-bottom:12px">Mettre en place une réplication Master/Slave</h2>
+            <p style="margin:0 0 14px;font-size:.9rem;color:var(--text-muted)">
+              Le projet consiste à installer MariaDB sur deux serveurs Debian (un maître et un esclave), puis à configurer la réplication pour qu’une modification sur le maître soit répercutée automatiquement sur l’esclave. La démarche se termine par un test de synchronisation et la rédaction de la documentation.
+            </p>
+            <ul style="padding-left:16px;margin:0;font-size:.9rem;color:var(--text-muted);display:flex;flex-direction:column;gap:8px">
+              <li>Installer MariaDB sur 2 serveurs Debian.</li>
+              <li>Créer une base de données sur les 2 serveurs pour les tests.</li>
+              <li>Configurer la réplication sur les 2 serveurs.</li>
+              <li>Tester la réplication en modifiant la base de données.</li>
+              <li>Réaliser la documentation.</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="card">
+            <img src="images/base_donnee.jpeg" alt="Réplication base de données" style="width:100%;height:180px;object-fit:cover">
+            <div class="card-body">
+              <div class="card-tag">Pédagogique</div>
+              <h3 class="card-title">Réplication MariaDB</h3>
+              <p class="card-desc" style="font-size:.85rem">
+                Mise en place d’une réplication Master/Slave et test de synchronisation.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Stack / Outils</strong>
+            <div class="card-tools" style="margin:0">
+              <span class="tool-chip">MariaDB</span>
+              <span class="tool-chip">Debian</span>
+              <span class="tool-chip">SQL</span>
+              <span class="tool-chip">mysqldump</span>
+              <span class="tool-chip">systemctl</span>
+            </div>
+          </div>
+
+          <a href="projet_scolaire.html" class="btn btn-secondary" style="width:100%;justify-content:center">
+            ← Retour aux projets
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

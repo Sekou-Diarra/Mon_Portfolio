@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Séminaire — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <div class="section-label">Projets scolaires</div>
+        <h1>Projet Séminaire</h1>
+        <p>API REST (JSON) + site web PHP/MVC pour gérer les conférences et les inscriptions.</p>
+      </div>
+
+      <!-- META TAGS -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <span class="tool-chip"><i class="fas fa-tag" style="margin-right:6px;color:var(--accent)"></i>Projet scolaire</span>
+        <span class="tool-chip"><i class="fas fa-code" style="margin-right:6px;color:var(--accent)"></i>PHP</span>
+        <span class="tool-chip"><i class="fas fa-route" style="margin-right:6px;color:var(--accent2)"></i>MVC</span>
+        <span class="tool-chip"><i class="fas fa-layer-group" style="margin-right:6px;color:var(--accent2)"></i>Objet</span>
+        <span class="tool-chip"><i class="fas fa-server" style="margin-right:6px;color:var(--accent)"></i>API REST</span>
+        <span class="tool-chip"><i class="fas fa-code-branch" style="margin-right:6px;color:var(--accent)"></i>JSON</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>MySQL</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start">
+
+        <!-- LEFT -->
+        <div>
+
+          <!-- CONTEXTE -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Contexte</div>
+            <h2 style="margin-bottom:16px">Centre de conférence de Limoges</h2>
+            <p style="margin-bottom:16px">
+              Le Centre de conférence de la ville de Limoges accueille régulièrement des conférences ou des séminaires
+              dont les thèmes sont variés.
+            </p>
+            <p style="margin-bottom:16px">
+              Un séminaire est prévu le <strong>12 octobre 2222</strong> autour des questions urbaines. Il est ouvert
+              aux acteurs des <strong>seules municipalités</strong>, qui peuvent venir de différents départements.
+            </p>
+            <p style="margin-bottom:16px">
+              Le séminaire dure une journée et propose différentes conférences, certaines sur le même créneau horaire.
+              Les données sont stockées dans une base de données : pour utiliser l’application, une <strong>API REST</strong>
+              est nécessaire (format <strong>JSON</strong>).
+            </p>
+          </section>
+
+          <!-- TÂCHES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Objectifs</div>
+            <h2 style="margin-bottom:24px">Missions à réaliser</h2>
+
+            <div style="display:flex;flex-direction:column;gap:16px">
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">Partie 1</span>
+                    <h3 style="font-size:.98rem;margin:0">Création de l’API REST</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Mise en place du point d’entrée <span style="font-family:var(--font-mono)">api.php</span>, de la connexion PDO,
+                    des classes métiers (ex : <span style="font-family:var(--font-mono)">conference</span>, <span style="font-family:var(--font-mono)">intervenant</span>, <span style="font-family:var(--font-mono)">seminaire</span>)
+                    et des repositories. Exposition d’endpoints en <strong>JSON</strong> pour récupérer les conférences/séminaires
+                    et gérer l’inscription/authentification.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">Partie 2</span>
+                    <h3 style="font-size:.98rem;margin:0">Gestion des inscriptions</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Développement du site web PHP/MVC pour :
+                    consulter le programme des conférences d’un séminaire,
+                    exploiter les inscriptions réalisées par les représentants des municipalités,
+                    et afficher les inscriptions uniquement après identification (connexion).
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ÉTAPES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Déroulement</div>
+            <h2 style="margin-bottom:28px">Étapes du projet</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 1</div>
+                <div class="timeline-title">Préparer la base de données</div>
+                <div class="timeline-place">Exécution du script SQL (<span style="font-family:var(--font-mono)">seminaire.sql</span>) pour créer tables et données de test.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 2</div>
+                <div class="timeline-title">Construire l’API REST JSON</div>
+                <div class="timeline-place">Mise en place de la connexion PDO, des classes métiers et des repositories (endpoints : conférences, séminaires, inscription, login...).</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 3</div>
+                <div class="timeline-title">Développer le site PHP/MVC</div>
+                <div class="timeline-place">Pages et formulaires pour afficher le programme, démarrer/terminer l’inscription, et gérer l’accès via identification.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 4</div>
+                <div class="timeline-title">Tests (Postman) & validation</div>
+                <div class="timeline-place">Vérification des endpoints REST, des requêtes d’inscription et de récupération des inscriptions d’un participant.</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SYNTHESE -->
+          <section>
+            <div class="section-label">Bilan</div>
+            <h2 style="margin-bottom:20px">Synthèse des réalisations</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-server"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">API REST JSON</h3>
+                  <p style="font-size:.83rem;margin:0">Point d’entrée, endpoints et repositories pour exposer les données.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-list-ul"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Programme des conférences</h3>
+                  <p style="font-size:.83rem;margin:0">Consultation des conférences d’un séminaire et gestion des créneaux.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent2);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-user-lock"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Inscription & accès</h3>
+                  <p style="font-size:.83rem;margin:0">Authentification et exploitation des inscriptions d’un participant.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent2);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-vial"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Tests API</h3>
+                  <p style="font-size:.83rem;margin:0">Vérification des requêtes Postman et résultats attendus (succès/erreurs).</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="card">
+            <img src="images/seminaire.jpeg" alt="Projet Séminaire" style="width:100%;height:180px;object-fit:cover">
+            <div class="card-body">
+              <div class="card-tag">Projet pédagogique</div>
+              <h3 class="card-title">Séminaire</h3>
+              <p class="card-desc" style="font-size:.85rem">Gestion d’un séminaire via API REST et site PHP/MVC.</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Fonctionnalités clés</strong>
+            <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:5px">
+              <li>Consulter le programme des conférences</li>
+              <li>Inscription à une conférence (par municipalité)</li>
+              <li>Connexion et accès aux inscriptions</li>
+              <li>Récupérer les conférences d’un participant</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Stack technique</strong>
+            <div class="card-tools" style="margin:0">
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">MVC</span>
+              <span class="tool-chip">API REST</span>
+              <span class="tool-chip">JSON</span>
+              <span class="tool-chip">PDO</span>
+              <span class="tool-chip">MySQL</span>
+              <span class="tool-chip">Postman</span>
+            </div>
+          </div>
+
+          <a href="projet_scolaire.html" class="btn btn-secondary" style="width:100%;justify-content:center">
+            ← Retour aux projets
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

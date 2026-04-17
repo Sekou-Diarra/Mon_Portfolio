@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion de patrimoine informatique — GLPI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <div class="section-label">Projets scolaires</div>
+        <h1>Gestion de patrimoine informatique</h1>
+        <p>Installation de GLPI, déploiement d'agents et gestion du cycle de vie des tickets.</p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <span class="tool-chip"><i class="fas fa-tag" style="margin-right:6px;color:var(--accent)"></i>Projet scolaire</span>
+        <span class="tool-chip"><i class="fas fa-terminal" style="margin-right:6px;color:var(--accent)"></i>Debian 12</span>
+        <span class="tool-chip"><i class="fas fa-server" style="margin-right:6px;color:var(--accent)"></i>LAMP (Apache/MariaDB)</span>
+        <span class="tool-chip"><i class="fas fa-tools" style="margin-right:6px;color:var(--accent)"></i>GLPI 10.0.19</span>
+        <span class="tool-chip"><i class="fas fa-user-shield" style="margin-right:6px;color:var(--accent)"></i>OpenLDAP</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start">
+
+        <div>
+
+          <section style="margin-bottom:48px">
+            <div class="section-label">Contexte</div>
+            <h2 style="margin-bottom:16px">Mise en place d'une solution d'inventaire</h2>
+            <p style="margin-bottom:20px">
+              Ce projet consiste à installer et configurer la solution GLPI sur un serveur Debian 12 pour assurer la gestion du patrimoine informatique. 
+              L'objectif est de centraliser l'inventaire via des agents et de gérer les demandes d'assistance (Ticketing).
+            </p>
+            <iframe src="documents/Gestion de patrimoine informatique.pdf" width="100%" height="480px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2)">
+              Contexte GLPI
+            </iframe>
+          </section>
+
+          <section style="margin-bottom:48px">
+            <div class="section-label">Objectifs</div>
+            <h2 style="margin-bottom:24px">Tâches à réaliser</h2>
+
+            <div style="display:flex;flex-direction:column;gap:16px">
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">T1</span>
+                    <h3 style="font-size:.98rem;margin:0">Installation du serveur LAMP et GLPI</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Préparation d'une VM Debian 12, installation d'Apache2, MariaDB et PHP. Configuration de la base de données <code>db_glpi</code> et déploiement de GLPI 10.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">T2</span>
+                    <h3 style="font-size:.98rem;margin:0">Déploiement des agents et Inventaire</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Installation et configuration de l'agent GLPI sur des clients Linux et Windows. Test de la remontée automatique des informations matérielles sur le serveur.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">T3</span>
+                    <h3 style="font-size:.98rem;margin:0">Cycle de vie d'un ticket et Authentification</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Création de profils (Self-service, Technicien, Super-Admin). Test complet du workflow : création, attribution, résolution et clôture. Liaison avec OpenLDAP pour l'import d'utilisateurs.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section style="margin-bottom:48px">
+            <div class="section-label">Déroulement</div>
+            <h2 style="margin-bottom:28px">Étapes du projet</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Phase 1</div>
+                <div class="timeline-title">Infrastructure Serveur</div>
+                <div class="timeline-place">Installation de Debian 12 et sécurisation de MariaDB. Configuration du VirtualHost Apache.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Phase 2</div>
+                <div class="timeline-title">Configuration GLPI</div>
+                <div class="timeline-place">Finalisation de l'installation via l'interface web et activation des modules d'inventaire.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Phase 3</div>
+                <div class="timeline-title">Documentation Technique</div>
+                <div class="timeline-place">Rédaction de la documentation incluant les captures d'écran des tests de ticketing.</div>
+              </div>
+            </div>
+            <iframe src="documents/Documentation_GLPI 2.pdf" width="100%" height="480px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2);margin-top:24px">
+              Documentation Technique GLPI
+            </iframe>
+          </section>
+
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="card">
+            <img src="images/glpi-logo.jpg" alt="Logo GLPI" style="width:100%;height:180px;object-fit:cover">
+            <div class="card-body">
+              <div class="card-tag">Projet infrastructure</div>
+              <h3 class="card-title">Solution GLPI</h3>
+              <p class="card-desc" style="font-size:.85rem">Gestionnaire de parc informatique et helpdesk open-source.</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Profils Utilisateurs</strong>
+            <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:5px">
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">Self-service</span> — Création de tickets</li>
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">Technicien</span> — Traitement technique</li>
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">Super-Admin</span> — Vue globale & Admin</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Stack technique</strong>
+            <div class="card-tools" style="margin:0">
+              <span class="tool-chip">Linux</span>
+              <span class="tool-chip">Apache</span>
+              <span class="tool-chip">MariaDB</span>
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">LDAP</span>
+            </div>
+          </div>
+
+          <a href="projet_scolaire.html" class="btn btn-secondary" style="width:100%;justify-content:center">
+            ← Retour aux projets
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
