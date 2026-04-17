@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congrès ANALIM — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <div class="section-label">Projets scolaires</div>
+        <h1>Congrès ANALIM</h1>
+        <p>Application web de gestion du congrès (inscriptions, sessions, activités, facturation) en PHP — MVC — CRUD.</p>
+      </div>
+
+      <!-- META TAGS -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <span class="tool-chip"><i class="fas fa-tag" style="margin-right:6px;color:var(--accent)"></i>Projet scolaire</span>
+        <span class="tool-chip"><i class="fas fa-laptop-code" style="margin-right:6px;color:var(--accent)"></i>PHP-OBJET</span>
+        <span class="tool-chip"><i class="fas fa-layer-group" style="margin-right:6px;color:var(--accent)"></i>MVC</span>
+        <span class="tool-chip"><i class="fas fa-code" style="margin-right:6px;color:var(--accent)"></i>CRUD</span>
+        <span class="tool-chip"><i class="fas fa-server" style="margin-right:6px;color:var(--accent)"></i>WampServer</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>MySQL</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>PHPMyAdmin</span>
+        <span class="tool-chip"><i class="fab fa-git-alt" style="margin-right:6px;color:var(--accent)"></i>Git</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start">
+
+        <!-- LEFT -->
+        <div>
+
+          <!-- CONTEXTE -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Contexte</div>
+            <h2 style="margin-bottom:16px">Maison des Ligues de Lorraine — Congrès ANALIM</h2>
+
+            <p style="margin-bottom:16px">
+              La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des salles et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+            </p>
+            <p style="margin-bottom:16px">
+              Dans le cadre de la Maison des Ligues, un <strong>Congrès National des Maisons des Ligues</strong> est organisé à Limoges sur une semaine de 5 jours ouvrables. Le programme est composé de sessions d’une demi-journée (conférences, débats, etc.).
+            </p>
+            <p style="margin-bottom:16px">
+              Afin de donner plus de souplesse à l’organisation du congrès, il a été décidé que celle-ci soit gérée grâce à une application web : inscriptions, dossiers pour chaque congressiste, affectation à un hôtel, inscription aux sessions, inscription aux activités, facturation et enregistrement des règlements.
+            </p>
+
+            <h3 style="margin:22px 0 12px">Organisation & domaines couverts</h3>
+            <p style="margin-bottom:12px">
+              Les organisateurs reçoivent les fiches d’inscription des participants (avec des informations obligatoires : nom, prénom, adresse, adresse mail) et envoient ensuite une confirmation par mail. Une facture doit être générée en tenant compte des éléments à facturer.
+            </p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+              <div class="card">
+                <div class="card-body" style="padding:16px 18px">
+                  <h3 style="font-size:.95rem;margin:0 0 10px">Gestion des tables</h3>
+                  <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:6px">
+                    <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.1</span> — Congresistes</li>
+                    <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.2</span> — Activités</li>
+                    <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.3</span> — Sessions</li>
+                    <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.4</span> — Hôtels</li>
+                    <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.5</span> — Organismes payeurs</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:16px 18px">
+                  <h3 style="font-size:.95rem;margin:0 0 10px">Gestion du congrès</h3>
+                  <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:6px">
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.1</span> — Création facture</li>
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.2</span> — Inscription activités</li>
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.3</span> — Inscription sessions</li>
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.4</span> — Règlements</li>
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.5</span> — Liste congressistes</li>
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.6</span> — Hôtellerie</li>
+                    <li><span style="color:var(--accent2);font-family:var(--font-mono)">T2.7</span> — Affichage facture</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="margin:22px 0 12px">Contraintes techniques</h3>
+            <ul style="padding-left:16px;margin:0;font-size:.87rem;color:var(--text-muted);display:flex;flex-direction:column;gap:6px">
+              <li>Travail en mode projet avec un dépôt Git si nécessaire</li>
+              <li>Création de la base MySQL (MCD comme étape préalable)</li>
+              <li>Respect de l’architecture MVC</li>
+              <li>PHP-OBJET : classes métiers</li>
+              <li>Documentation technique du projet</li>
+            </ul>
+          </section>
+
+          <!-- TÂCHES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Objectifs</div>
+            <h2 style="margin-bottom:24px">Missions à réaliser</h2>
+
+            <div style="display:flex;flex-direction:column;gap:16px">
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">Mission 1</span>
+                    <h3 style="font-size:.98rem;margin:0">Hôtellerie</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">Réalisation de <span style="font-family:var(--font-mono);color:var(--accent)">T1.4</span> (gestion des hôtels) et <span style="font-family:var(--font-mono);color:var(--accent)">T2.6</span> (loger un congressiste, selon l’hôtel et le petit-déjeuner).</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">Mission 2</span>
+                    <h3 style="font-size:.98rem;margin:0">Congressiste</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">Réalisation de <span style="font-family:var(--font-mono);color:var(--accent2)">T2.1</span> (création facture) et <span style="font-family:var(--font-mono);color:var(--accent2)">T2.7</span> (affichage des factures, filtrage et détail).</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">Mission 3</span>
+                    <h3 style="font-size:.98rem;margin:0">Facturation</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">Réalisation de <span style="font-family:var(--font-mono);color:var(--accent)">T2.1</span> (création facture) et <span style="font-family:var(--font-mono);color:var(--accent)">T2.5</span> (liste des congressistes triée par ordre alphabétique).</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">Mission 4</span>
+                    <h3 style="font-size:.98rem;margin:0">Règlements</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">Réglage et suivi des factures via <span style="font-family:var(--font-mono);color:var(--accent2)">T1.5</span> (organismes payeurs) et <span style="font-family:var(--font-mono);color:var(--accent2)">T2.4</span> (enregistrer / annuler un règlement + ticket de suivi).</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">Mission 5</span>
+                    <h3 style="font-size:.98rem;margin:0">Activités</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">Réalisation de <span style="font-family:var(--font-mono);color:var(--accent)">T1.2</span> (gestion des activités) et <span style="font-family:var(--font-mono);color:var(--accent)">T2.2</span> (inscriptions / annulation tant que la facture n’est pas créée).</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">Mission 6</span>
+                    <h3 style="font-size:.98rem;margin:0">Sessions</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">Réponse aux besoins via <span style="font-family:var(--font-mono);color:var(--accent2)">T1.3</span> (gestion des sessions) et <span style="font-family:var(--font-mono);color:var(--accent2)">T2.3</span> (inscriptions / annulation, sous réserve que la facture ne soit pas créée).</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ÉTAPES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Déroulement</div>
+            <h2 style="margin-bottom:28px">Étapes du projet</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 1</div>
+                <div class="timeline-title">Modélisation & base MySQL</div>
+                <div class="timeline-place">MCD et création des tables (PHPMyAdmin) pour supporter inscriptions, sessions, hôtels, organismes payeurs et facturation.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 2</div>
+                <div class="timeline-title">Architecture MVC (PHP-OBJET)</div>
+                <div class="timeline-place">Mise en place des classes métiers et des contrôleurs pour respecter les contraintes du projet.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 3</div>
+                <div class="timeline-title">Développement des fonctionnalités</div>
+                <div class="timeline-place">Implémentation des formulaires et contrôles associés à chaque tâche (T1.* et T2.*).</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 4</div>
+                <div class="timeline-title">Focus Mission 5</div>
+                <div class="timeline-place">Gestion des activités et inscriptions (et annulation) tant que la facture n’est pas créée.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Partie 5</div>
+                <div class="timeline-title">Tests & documentation</div>
+                <div class="timeline-place">Vérification des règles métier (facture imprimée, annulation de règlement, filtrage des factures) et rédaction de la documentation.</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SYNTHESE -->
+          <section>
+            <div class="section-label">Bilan</div>
+            <h2 style="margin-bottom:20px">Synthèse des réalisations</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-diagram-project"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Modélisation & DB</h3>
+                  <p style="font-size:.83rem;margin:0">MCD et création de la base MySQL pour l’ensemble des modules du congrès.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-route"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Architecture MVC</h3>
+                  <p style="font-size:.83rem;margin:0">Contrôleurs + vues + classes métiers organisés selon l’approche PHP-OBJET.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-person-booth"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Mission 5 : Activités</h3>
+                  <p style="font-size:.83rem;margin:0">Gestion des activités et inscriptions avec règles (annulation avant facturation).</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-list-check"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Contrôles & cohérence</h3>
+                  <p style="font-size:.83rem;margin:0">Vérifications métier : création/annulation selon l’état de la facture et des règlements.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="card">
+            <img src="images/congres.jpeg" alt="Congrès ANALIM" style="width:100%;height:180px;object-fit:cover">
+            <div class="card-body">
+              <div class="card-tag">Projet pédagogique</div>
+              <h3 class="card-title">Congrès ANALIM</h3>
+              <p class="card-desc" style="font-size:.85rem">Gestion du congrès en web : inscriptions, sessions, activités et facturation.</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Mission 5 — Activités</strong>
+            <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:5px">
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">T1.2</span> — Gestion des activités</li>
+              <li><span style="color:var(--accent);font-family:var(--font-mono)">T2.2</span> — Inscription aux activités</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Stack technique</strong>
+            <div class="card-tools" style="margin:0">
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">PHP-OBJET</span>
+              <span class="tool-chip">MVC</span>
+              <span class="tool-chip">MySQL</span>
+              <span class="tool-chip">WampServer</span>
+              <span class="tool-chip">PHPMyAdmin</span>
+            </div>
+          </div>
+
+          <a href="projet_scolaire.html" class="btn btn-secondary" style="width:100%;justify-content:center">
+            ← Retour aux projets
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

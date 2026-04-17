@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage Neop — Sékou Diarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <div class="section-label">Projets en entreprise</div>
+        <h1>Module d'analyse — Neop</h1>
+        <p>Stage de mai à juin 2025 — Création d'un module web de visualisation des statistiques de fréquentation.</p>
+      </div>
+
+      <!-- META TAGS -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <span class="tool-chip"><i class="fas fa-building" style="margin-right:6px;color:var(--accent)"></i>Stage entreprise</span>
+        <span class="tool-chip"><i class="fab fa-symfony" style="margin-right:6px;color:var(--accent)"></i>Symfony</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>Doctrine ORM</span>
+        <span class="tool-chip"><i class="fas fa-chart-bar" style="margin-right:6px;color:var(--accent)"></i>Chart.js</span>
+        <span class="tool-chip"><i class="fab fa-docker" style="margin-right:6px;color:var(--accent)"></i>Docker</span>
+        <span class="tool-chip"><i class="fas fa-database" style="margin-right:6px;color:var(--accent)"></i>MySQL</span>
+        <span class="tool-chip"><i class="fab fa-js" style="margin-right:6px;color:var(--accent)"></i>JavaScript</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start">
+
+        <!-- LEFT -->
+        <div>
+
+          <!-- CONTEXTE -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Contexte</div>
+            <h2 style="margin-bottom:16px">Neop France — Limoges</h2>
+            <p style="margin-bottom:12px">
+              Neop est une entreprise spécialisée dans les solutions de gestion d'espaces sportifs et de loisirs.
+              Dans le cadre de mon stage de première année de BTS SIO SLAM, j'ai été chargé de concevoir et développer
+              un module d'analyse de données intégré à la plateforme existante.
+            </p>
+            <p>
+              Ce module permet de visualiser les statistiques de fréquentation des espaces équipés de systèmes
+              de contrôle d'accès, à partir des traces d'accès relevées sur chaque espace.
+            </p>
+          </section>
+
+          <!-- TÂCHES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Objectifs</div>
+            <h2 style="margin-bottom:24px">Fonctionnalités à développer</h2>
+
+            <div style="display:flex;flex-direction:column;gap:16px">
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">F1</span>
+                    <h3 style="font-size:.98rem;margin:0">Statistiques de fréquentation</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Visualisation du nombre de fréquentations par semaine, par mois et par an,
+                    avec des tableaux filtrables et des graphiques générés via Chart.js.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">F2</span>
+                    <h3 style="font-size:.98rem;margin:0">Heures d'affluence par espace</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Identification des périodes de forte activité pour chaque espace,
+                    avec filtres par terrain, année et mois. Affichage sous forme de tableau et de graphique en barres.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);color:var(--accent);padding:3px 10px;border-radius:4px">F3</span>
+                    <h3 style="font-size:.98rem;margin:0">Heures creuses par espace</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Affichage des heures les moins fréquentées pour chaque espace,
+                    avec un filtre par heure. Permet d'identifier les plages horaires à faible activité.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                    <span style="font-family:var(--font-mono);font-size:.72rem;background:rgba(0,184,255,0.1);border:1px solid rgba(0,184,255,0.25);color:var(--accent2);padding:3px 10px;border-radius:4px">F4</span>
+                    <h3 style="font-size:.98rem;margin:0">Vue d'ensemble et taux de réservations</h3>
+                  </div>
+                  <p style="font-size:.87rem;margin:0">
+                    Camembert affichant le taux de réservations globales et le taux de réalisation réel des réservations
+                    sur les dernières 24h. Données fixes, non filtrables.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ÉTAPES -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Déroulement</div>
+            <h2 style="margin-bottom:28px">Étapes du projet</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Étape 1</div>
+                <div class="timeline-title">Prise en main de l'environnement</div>
+                <div class="timeline-place">Découverte de l'environnement Symfony dockerisé, de Doctrine ORM et de la base de données MySQL existante.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Étape 2</div>
+                <div class="timeline-title">Développement du module</div>
+                <div class="timeline-place">Création de la page web, des contrôleurs Symfony, des requêtes Doctrine et intégration des graphiques Chart.js avec DataTables.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Étape 3</div>
+                <div class="timeline-title">Tests et livraison</div>
+                <div class="timeline-place">Vérification du bon fonctionnement de l'ensemble des sections, corrections et livraison du module.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Étape 4</div>
+                <div class="timeline-title">Rédaction de la documentation utilisateur</div>
+                <div class="timeline-place">Documentation des fonctionnalités, des filtres disponibles et du fonctionnement de chaque section pour les utilisateurs finaux.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Étape 5</div>
+                <div class="timeline-title">Rédaction de la documentation technique</div>
+                <div class="timeline-place">Spécification des sections, des filtres, des graphiques et des requêtes SQL/DQL nécessaires à chaque fonctionnalité.</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SYNTHESE -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Bilan</div>
+            <h2 style="margin-bottom:20px">Synthèse des réalisations</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-chart-bar"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Graphiques interactifs</h3>
+                  <p style="font-size:.83rem;margin:0">Génération de graphiques en barres et en camembert via Chart.js avec filtres dynamiques.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-table"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Tableaux filtrables</h3>
+                  <p style="font-size:.83rem;margin:0">Intégration de DataTables pour la pagination, la recherche et le filtrage des données.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fas fa-database"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Requêtes SQL / DQL</h3>
+                  <p style="font-size:.83rem;margin:0">Écriture de requêtes SQL natives et DQL via Doctrine ORM pour extraire les données de fréquentation.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" style="padding:18px 20px">
+                  <div style="color:var(--accent);font-size:1.2rem;margin-bottom:8px"><i class="fab fa-docker"></i></div>
+                  <h3 style="font-size:.95rem;margin-bottom:4px">Environnement Docker</h3>
+                  <p style="font-size:.83rem;margin:0">Développement dans un environnement entièrement dockerisé sous Ubuntu avec Symfony.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- DOCUMENTATION -->
+          <section>
+            <div class="section-label">Documentation</div>
+            <h2 style="margin-bottom:20px">Documents du projet</h2>
+
+            <div class="section-label" style="margin-bottom:12px">Aperçu — Documentation technique</div>
+            <iframe src="documents/Documentation technique du projet de site web.pdf" width="100%" height="480px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2);margin-bottom:24px">
+              Documentation technique
+            </iframe>
+
+            <div class="section-label" style="margin-bottom:12px">Aperçu — Documentation utilisateur</div>
+            <iframe src="documents/Documentation Utilisateur.pdf" width="100%" height="480px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2)">
+              Documentation utilisateur
+            </iframe>
+          </section>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="card">
+            <div class="card-body" style="padding:24px">
+              <div class="card-tag">Stage en entreprise</div>
+              <h3 class="card-title" style="margin-bottom:4px">Neop France</h3>
+              <p class="card-desc" style="font-size:.85rem;margin-bottom:16px">Limoges — Mai à Juin 2025</p>
+              <div style="display:flex;flex-direction:column;gap:8px;font-size:.83rem;color:var(--text-muted)">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="fas fa-calendar" style="color:var(--accent);width:14px"></i>
+                  <span>Mai 2025 – Juin 2025</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="fas fa-map-marker-alt" style="color:var(--accent);width:14px"></i>
+                  <span>Limoges, France</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="fas fa-user" style="color:var(--accent);width:14px"></i>
+                  <span>Stage 1ère année BTS SIO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Fonctionnalités livrées</strong>
+            <ul style="padding-left:16px;margin:0;font-size:.83rem;color:var(--text-muted);display:flex;flex-direction:column;gap:5px">
+              <li>Fréquentation hebdo / mensuelle / annuelle</li>
+              <li>Heures d'affluence par espace</li>
+              <li>Heures creuses par espace</li>
+              <li>Vue d'ensemble (camembert 24h)</li>
+              <li>Taux de réalisation des réservations</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <strong style="color:var(--text);display:block;margin-bottom:8px">Stack technique</strong>
+            <div class="card-tools" style="margin:0">
+              <span class="tool-chip">Symfony</span>
+              <span class="tool-chip">Doctrine ORM</span>
+              <span class="tool-chip">Docker</span>
+              <span class="tool-chip">MySQL</span>
+              <span class="tool-chip">Chart.js</span>
+              <span class="tool-chip">DataTables</span>
+              <span class="tool-chip">PHP</span>
+              <span class="tool-chip">JavaScript</span>
+              <span class="tool-chip">HTML/CSS</span>
+              <span class="tool-chip">Ubuntu</span>
+            </div>
+          </div>
+
+          <a href="projet_entreprise.html" class="btn btn-secondary" style="width:100%;justify-content:center">
+            ← Retour aux projets
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
