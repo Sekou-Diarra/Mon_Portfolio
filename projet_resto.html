@@ -36,16 +36,22 @@
         <!-- LEFT -->
         <div>
 
-          <!-- OBJECTIF -->
+          <!-- CARROUSEL -->
           <section style="margin-bottom:48px">
-            <div class="section-label">Objectif</div>
-            <h2 style="margin-bottom:16px">Site de critiques de restaurants</h2>
-            <p>
-              Découvrir et mettre en pratique le modèle MVC (Modèle-Vue-Contrôleur) en PHP,
-              tout en apprenant à interagir avec une base de données MySQL. Le projet consiste à créer
-              un site web de critiques de restaurants, similaire à Tripadvisor ou LaFourchette,
-              permettant aux utilisateurs de consulter, noter et commenter des restaurants.
-            </p>
+            <div class="carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide" data-caption="Page d'accueil">
+                  <img src="screenshots/resto_accueil.jpg" alt="Page d'accueil">
+                </div>
+                <div class="carousel-slide" data-caption="Formulaire de connexion">
+                  <img src="screenshots/connexion_resto.jpg" alt="Formulaire de connexion">
+                </div>
+              </div>
+              <button class="carousel-btn prev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-btn next" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-dots"></div>
+            <div class="carousel-caption"></div>
           </section>
 
           <!-- CONTEXTE -->
@@ -97,6 +103,20 @@
             </div>
           </section>
 
+
+          <!-- OBJECTIF -->
+          <section style="margin-bottom:48px">
+            <div class="section-label">Objectif</div>
+            <h2 style="margin-bottom:16px">Site de critiques de restaurants</h2>
+            <p>
+              Découvrir et mettre en pratique le modèle MVC (Modèle-Vue-Contrôleur) en PHP,
+              tout en apprenant à interagir avec une base de données MySQL. Le projet consiste à créer
+              un site web de critiques de restaurants, similaire à Tripadvisor ou LaFourchette,
+              permettant aux utilisateurs de consulter, noter et commenter des restaurants.
+            </p>
+          </section>
+
+
           <!-- ÉTAPES -->
           <section>
             <div class="section-label">Déroulement</div>
@@ -128,6 +148,14 @@
                 <div class="timeline-place">Affichage des meilleurs restaurants, administration des avis, recherche personnalisée selon les goûts.</div>
               </div>
             </div>
+          </section>
+
+          <section style="margin-bottom:48px">
+            <div class="section-label">Documentation Technique</div>
+            <iframe src="documents/documentation_r3st0.pdf" width="100%" height="480px"
+              style="border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2)">
+              Documentation projet resto
+            </iframe>
           </section>
 
         </div>
