@@ -16,7 +16,6 @@ const NAV_HTML = `
         <a href="#" class="dropdown-toggle" data-page="projets" id="dropToggle">Projets</a>
         <ul class="dropdown-menu" id="dropMenu">
           <li><a href="projet_scolaire.html">Projets scolaires</a></li>
-          <li><a href="projets.html">Projets personnels</a></li>
           <li><a href="projet_entreprise.html">Projets en entreprise</a></li>
         </ul>
       </li>
